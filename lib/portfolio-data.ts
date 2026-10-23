@@ -2,11 +2,8 @@ export type Project = {
   title: string
   description: string
   tags: string[]
-  /** Cover image. Also used as the video poster and as a fallback if the video can't load. */
   image: string
-  /** Optional video (mp4/webm) shown in the main slot. Drop files in /public/projects/videos. */
   video?: string
-  /** Extra screenshots shown in the horizontal scroll strip. */
   gallery: string[]
   href: string
   year: string
@@ -34,7 +31,7 @@ export const profile = {
   location: 'Remote / Metaverse',
   available: true,
   availabilityLabel: 'Open to commissions & contracts',
-  email: 'your-email@carrier.com', // 💡 Replace with your new email address!
+  email: 'cornelious.dev@proton.me',
 }
 
 export const projects: Project[] = [
@@ -42,38 +39,42 @@ export const projects: Project[] = [
     title: 'Advanced Directional Movement',
     description: 'A custom shift-lock controller and 4-way evasive roll engine featuring vector projection alignment, dynamic camera tweens, and Rojo source control integration.',
     tags: ['Luau', 'Vector Math', 'Rojo', 'Gameplay Scripting'],
-    image: '/projects/project-1.png', // Fallback thumbnail image
-    video: '/projects/videos/movement.mp4', // 💡 Upload your video to /public/projects/videos and name it movement.mp4
-    gallery: [], // Leave empty or add static screenshots later
-    href: 'YOUR_SHOWCASE_LINK_HERE', // 💡 Paste your Talent Hub or direct showcase link here
-    year: '2026',
+    image: '/projects/project-1.png', 
+    video: '/projects/videos/advanced_directional_movement.mp4', 
+    gallery: [], 
+    href: '', 
+    year: '2025',
   },
   {
-    title: 'State-Driven Combat & Hitbox Engine',
-    description: 'A low-latency combat system utilizing spatial queries and server-side validation to prevent exploits.',
-    tags: ['Gameplay Scripting', 'Raycasting', 'Security'],
+    title: 'RemoteSpy Detection',
+    description: 'A runtime memory obfuscation and client-to-server argument validation layer designed to detect unauthorized environment hooks, intercept malicious remote sniffing, and flag automated script execution.',
+    tags: ['Cybersecurity', 'Luau Scripting', 'Metatable Manipulation', 'Memory Protection'],
+    video: '/projects/videos/remotespy_detection.mp4',
     image: '/projects/project-2.png',
     gallery: [],
     href: '#',
-    year: '2025',
+    year: '2024',
   },
   {
-    title: 'Custom UI & Menu Architecture',
-    description: 'A dynamic, state-managed interface system utilizing sleek animations and cross-platform controller support.',
-    tags: ['UI Scripting', 'Roact / Fusion', 'UX Design'],
+    title: 'Noclip Anticheat',
+    description: 'A robust, server-authoritative anti-exploit system featuring real-time noclip detection, heuristic movement validation against teleport exploit.',
+    tags: ['Anti-Exploit', 'Luau Scripting', 'Server Authority', 'Rojo'],
+    video: '/project/videos/noclip_showcase.mp4',
     image: '/projects/project-3.png',
     gallery: [],
-    href: '#',
-    year: '2025',
+    href: 'https://github.com/magssium/anti_noclip',
+    year: '2024',
   },
+
   {
-    title: 'Data Memory & ProfileService Integration',
-    description: 'A bulletproof player data pipeline handling automatic session locking and massive state saves safely.',
-    tags: ['Backend Engineering', 'ProfileService', 'Databases'],
+    title: 'Anti-Teleport System',
+    description: 'A server-authoritative position validation system tracking delta movements, threshold limits, and workspace state synchronization to instantly flag and rollback the characters',
+    tags: ['Anti-Exploit', 'Luau Scripting', 'Server Authority', 'Network Optimization'],
+    video: '/project/videos/teleport_showcase.mp4',
     image: '/projects/project-4.png',
     gallery: [],
-    href: '#',
-    year: '2024',
+    href: 'https://github.com/magssium/anti_tp',
+    year: '2022',
   },
 ]
 
