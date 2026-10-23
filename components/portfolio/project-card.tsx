@@ -6,7 +6,6 @@ import { ArrowUpRight } from 'lucide-react'
 import type { Project } from '@/lib/portfolio-data'
 import { cn } from '@/lib/utils'
 import { MediaStrip, type MediaItem } from './media-strip'
-import { ProjectVideo } from './project-video'
 
 export function ProjectCard({ project, featured }: { project: Project; featured?: boolean }) {
   const [videoFailed, setVideoFailed] = useState(false)
@@ -31,11 +30,17 @@ export function ProjectCard({ project, featured }: { project: Project; featured?
           )}
         >
           {active.type === 'video' ? (
-            <ProjectVideo
+            <video
+              key={active.src}
               src={active.src}
               poster={project.image}
-              label={`${project.title} demo video`}
+              aria-label={`${project.title} demo video`}
               onError={() => setVideoFailed(true)}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="absolute inset-0 size-full object-cover"
             />
           ) : (
             <Image
