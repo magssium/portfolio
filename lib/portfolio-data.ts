@@ -2,7 +2,12 @@ export type Project = {
   title: string
   description: string
   tags: string[]
+  /** Cover image. Also used as the video poster and as a fallback if the video can't load. */
   image: string
+  /** Optional video (mp4/webm) shown in the main slot. Drop files in /public/projects/videos. */
+  video?: string
+  /** Extra screenshots shown in the horizontal scroll strip. */
+  gallery: string[]
   href: string
   year: string
 }
@@ -38,6 +43,8 @@ export const projects: Project[] = [
     description: 'A real-time analytics platform that turns complex product data into clear, actionable insight.',
     tags: ['Product Design', 'Next.js', 'Data Viz'],
     image: '/projects/project-1.png',
+    video: '/projects/videos/pulse-analytics.mp4',
+    gallery: ['/projects/project-1-b.png', '/projects/project-3.png', '/projects/project-4-b.png'],
     href: '#',
     year: '2026',
   },
@@ -46,6 +53,7 @@ export const projects: Project[] = [
     description: 'A minimalist personal finance app built for clarity and daily habit-forming.',
     tags: ['UI/UX', 'React Native'],
     image: '/projects/project-2.png',
+    gallery: ['/projects/project-2-b.png', '/projects/project-1-b.png'],
     href: '#',
     year: '2025',
   },
@@ -54,6 +62,7 @@ export const projects: Project[] = [
     description: 'A scalable component library powering consistent experiences across 12 products.',
     tags: ['Design Systems', 'TypeScript'],
     image: '/projects/project-3.png',
+    gallery: ['/projects/project-3-b.png', '/projects/project-2-b.png'],
     href: '#',
     year: '2025',
   },
@@ -62,6 +71,8 @@ export const projects: Project[] = [
     description: 'A conversational workspace that helps teams find answers across their tools in seconds.',
     tags: ['AI', 'Next.js', 'Interaction Design'],
     image: '/projects/project-4.png',
+    video: '/projects/videos/atlas-ai.mp4',
+    gallery: ['/projects/project-4-b.png', '/projects/project-1.png', '/projects/project-3-b.png'],
     href: '#',
     year: '2024',
   },
