@@ -26,53 +26,52 @@ export type SocialLink = {
 }
 
 export const profile = {
-  name: 'Alex Morgan',
-  initials: 'AM',
-  role: 'Product Designer & Front-End Engineer',
-  headline: 'I design and build calm, precise digital products.',
-  bio: 'I’m a designer-engineer focused on crafting interfaces that feel effortless and perform flawlessly. For the past eight years I’ve partnered with startups and global teams to ship products people love to use.',
-  location: 'San Francisco, CA',
+  name: 'Cornelious',
+  initials: 'C',
+  role: 'Luau Scripting Specialist & Game Programmer',
+  headline: 'Writing clean, optimized Luau scripts for immersive digital worlds.',
+  bio: 'I am a programmer specializing in Luau and game systems development. I focus on scripting smooth gameplay mechanics, optimizing backend logic, and engineering systems that bring complex virtual worlds to life.',
+  location: 'Remote / Metaverse',
   available: true,
-  availabilityLabel: 'Available for work',
-  email: 'hello@alexmorgan.dev',
+  availabilityLabel: 'Open to commissions & contracts',
+  email: 'your-email@carrier.com', // 💡 Replace with your new email address!
 }
 
 export const projects: Project[] = [
   {
-    title: 'Pulse Analytics',
-    description: 'A real-time analytics platform that turns complex product data into clear, actionable insight.',
-    tags: ['Product Design', 'Next.js', 'Data Viz'],
-    image: '/projects/project-1.png',
-    video: '/projects/videos/pulse-analytics.mp4',
-    gallery: ['/projects/project-1-b.png', '/projects/project-3.png', '/projects/project-4-b.png'],
-    href: '#',
+    title: 'Advanced Directional Movement',
+    description: 'A custom shift-lock controller and 4-way evasive roll engine featuring vector projection alignment, dynamic camera tweens, and Rojo source control integration.',
+    tags: ['Luau', 'Vector Math', 'Rojo', 'Gameplay Scripting'],
+    image: '/projects/project-1.png', // Fallback thumbnail image
+    video: '/projects/videos/movement.mp4', // 💡 Upload your video to /public/projects/videos and name it movement.mp4
+    gallery: [], // Leave empty or add static screenshots later
+    href: 'YOUR_SHOWCASE_LINK_HERE', // 💡 Paste your Talent Hub or direct showcase link here
     year: '2026',
   },
   {
-    title: 'Ledger Mobile',
-    description: 'A minimalist personal finance app built for clarity and daily habit-forming.',
-    tags: ['UI/UX', 'React Native'],
+    title: 'State-Driven Combat & Hitbox Engine',
+    description: 'A low-latency combat system utilizing spatial queries and server-side validation to prevent exploits.',
+    tags: ['Gameplay Scripting', 'Raycasting', 'Security'],
     image: '/projects/project-2.png',
-    gallery: ['/projects/project-2-b.png', '/projects/project-1-b.png'],
+    gallery: [],
     href: '#',
     year: '2025',
   },
   {
-    title: 'Mono Design System',
-    description: 'A scalable component library powering consistent experiences across 12 products.',
-    tags: ['Design Systems', 'TypeScript'],
+    title: 'Custom UI & Menu Architecture',
+    description: 'A dynamic, state-managed interface system utilizing sleek animations and cross-platform controller support.',
+    tags: ['UI Scripting', 'Roact / Fusion', 'UX Design'],
     image: '/projects/project-3.png',
-    gallery: ['/projects/project-3-b.png', '/projects/project-2-b.png'],
+    gallery: [],
     href: '#',
     year: '2025',
   },
   {
-    title: 'Atlas AI Assistant',
-    description: 'A conversational workspace that helps teams find answers across their tools in seconds.',
-    tags: ['AI', 'Next.js', 'Interaction Design'],
+    title: 'Data Memory & ProfileService Integration',
+    description: 'A bulletproof player data pipeline handling automatic session locking and massive state saves safely.',
+    tags: ['Backend Engineering', 'ProfileService', 'Databases'],
     image: '/projects/project-4.png',
-    video: '/projects/videos/atlas-ai.mp4',
-    gallery: ['/projects/project-4-b.png', '/projects/project-1.png', '/projects/project-3-b.png'],
+    gallery: [],
     href: '#',
     year: '2024',
   },
@@ -80,33 +79,21 @@ export const projects: Project[] = [
 
 export const experience: Experience[] = [
   {
-    role: 'Senior Product Engineer',
-    company: 'Northwind Labs',
-    period: '2023 — Present',
-    summary: 'Leading design engineering for the core platform, shipping a new interface used by 200k+ teams.',
+    role: 'Lead Gameplay Programmer',
+    company: 'Independent Commissions',
+    period: '2024 — Present',
+    summary: 'Engineering core backend game frameworks, optimizing network replication, and writing modular game code.',
   },
   {
-    role: 'Product Designer',
-    company: 'Linearity Studio',
-    period: '2020 — 2023',
-    summary: 'Designed end-to-end experiences for fintech and SaaS clients, increasing activation by 34% on average.',
-  },
-  {
-    role: 'Front-End Developer',
-    company: 'Brightwave Agency',
-    period: '2018 — 2020',
-    summary: 'Built performant marketing sites and web apps for brands across retail, media, and healthcare.',
-  },
-  {
-    role: 'Design Award — Site of the Day',
-    company: 'Awwwards',
-    period: '2022',
-    summary: 'Recognized for craft and interaction design on the Pulse Analytics launch site.',
-  },
+    role: 'Luau Scripting Contributor',
+    company: 'Talent Hub Projects',
+    period: '2022 — 2024',
+    summary: 'Designed custom physics systems, raycasted weapon assemblies, and responsive data pipelines for various game teams.',
+  }
 ]
 
 export const socials: SocialLink[] = [
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/your-handle', handle: '/in/your-handle' },
-  { label: 'GitHub', href: 'https://github.com/your-handle', handle: '@your-handle' },
+  { label: 'Discord', href: 'https://discord.com', handle: 'Cornelious' }, // 💡 You can swap href with a server invite link if you have one
+  { label: 'GitHub', href: 'https://github.com/your-handle', handle: '@your-handle' }, // 💡 Update with your actual github link/handle
   { label: 'Email', href: `mailto:${profile.email}`, handle: profile.email },
 ]
