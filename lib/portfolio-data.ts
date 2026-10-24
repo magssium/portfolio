@@ -40,7 +40,7 @@ export const projects: Project[] = [
     description: 'A custom shift-lock controller and 4-way evasive roll engine featuring vector projection alignment, dynamic camera tweens, and Rojo source control integration.',
     tags: ['Luau', 'Vector Math', 'Rojo', 'Gameplay Scripting'],
     image: '/projects/project-1.png', 
-    video: '/projects/videos/advanced_suspension.mp4', // 🛠️ Fixed key name & file mapping
+    video: 'public\projects\videos\advanced_directional_movement.mp4', // 🛠️ Fixed key name & file mapping
     gallery: [], 
     href: '#', 
     year: '2025',
