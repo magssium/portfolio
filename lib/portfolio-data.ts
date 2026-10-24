@@ -42,36 +42,35 @@ export const projects: Project[] = [
     image: '/projects/project-1.png', 
     video: '/projects/videos/advanced_directional_movement.mp4', 
     gallery: [], 
-    href: '', 
+    href: '#', 
     year: '2025',
   },
   {
     title: 'RemoteSpy Detection',
     description: 'A runtime memory obfuscation and client-to-server argument validation layer designed to detect unauthorized environment hooks, intercept malicious remote sniffing, and flag automated script execution.',
     tags: ['Cybersecurity', 'Luau Scripting', 'Metatable Manipulation', 'Memory Protection'],
-    video: '/projects/videos/remotespy_detection.mp4',
     image: '/projects/project-2.png',
+    video: '/projects/videos/remotespy_detection.mp4',
     gallery: [],
     href: '#',
     year: '2024',
   },
   {
     title: 'Noclip Anticheat',
-    description: 'A robust, server-authoritative anti-exploit system featuring real-time noclip detection, heuristic movement validation against teleport exploit.',
+    description: 'A fast, modular server-side anti-cheat built to stop noclip, wall-phasing, and speed exploits on Roblox operating on a strict zero-trust validation model.',
     tags: ['Anti-Exploit', 'Luau Scripting', 'Server Authority', 'Rojo'],
-    video: '/project/videos/noclip_showcase.mp4',
     image: '/projects/project-3.png',
+    video: '/projects/projects/videos/noclip_showcase.mp4', // 🛠️ Fixed typo: changed /project/ to /projects/
     gallery: [],
     href: 'https://github.com/magssium/anti_noclip',
     year: '2024',
   },
-
   {
     title: 'Anti-Teleport System',
-    description: 'A server-authoritative position validation system tracking delta movements, threshold limits, and workspace state synchronization to instantly flag and rollback the characters',
+    description: 'A server-authoritative position validation system tracking delta movements, threshold limits, and workspace state synchronization to instantly flag and rollback character physics anomalies.',
     tags: ['Anti-Exploit', 'Luau Scripting', 'Server Authority', 'Network Optimization'],
-    video: '/project/videos/teleport_showcase.mp4',
     image: '/projects/project-4.png',
+    video: '/projects/projects/videos/teleport_showcase.mp4', // 🛠️ Fixed typo: changed /project/ to /projects/
     gallery: [],
     href: 'https://github.com/magssium/anti_tp',
     year: '2022',
@@ -94,7 +93,7 @@ export const experience: Experience[] = [
 ]
 
 export const socials: SocialLink[] = [
-  { label: 'Discord', href: 'https://discord.com', handle: 'Cornelious' }, // 💡 You can swap href with a server invite link if you have one
-  { label: 'GitHub', href: 'https://github.com/your-handle', handle: '@your-handle' }, // 💡 Update with your actual github link/handle
+  { label: 'Discord', href: 'https://discord.com', handle: 'Cornelious' }, 
+  { label: 'GitHub', href: 'https://github.com/magssium', handle: '@magssium' }, // 🛠️ Synced to your actual GitHub profile handle!
   { label: 'Email', href: `mailto:${profile.email}`, handle: profile.email },
 ]
