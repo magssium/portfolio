@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 type ProjectVideoProps = {
   src: string
@@ -11,20 +11,32 @@ type ProjectVideoProps = {
 
 export function ProjectVideo({ src, poster, label, onError }: ProjectVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
+  const [showControls, setShowControls] = useState(false) // 👈 Track if we need manual controls
 
-  // Only play while on screen, and never autoplay for users who prefer reduced motion.
   useEffect(() => {
     const video = videoRef.current
     if (!video) return
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
+    // If they prefer reduced motion, don't autoplay, but show play controls instead!
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setShowControls(true)
+      return
+    }
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) video.play().catch(() => {})
-        else video.pause()
+        if (entry.isIntersecting) {
+          video.play().catch((err) => {
+            console.warn("Autoplay blocked, showing fallback controls:", err)
+            setShowControls(true) // 👈 Show controls if browser blocks autoplay
+          })
+        } else {
+          video.pause()
+        }
       },
       { threshold: 0.35 },
     )
+    
     observer.observe(video)
     return () => observer.disconnect()
   }, [src])
@@ -38,6 +50,7 @@ export function ProjectVideo({ src, poster, label, onError }: ProjectVideoProps)
       muted
       loop
       playsInline
+      controls={showControls} // 👈 Dynamically turn on controls if autoplay is disabled/blocked
       preload="metadata"
       aria-label={label}
       onError={onError}
