@@ -36,10 +36,23 @@ export const profile = {
 
 export const projects: Project[] = [
   {
+    title: 'Advanced Combat System',
+    description: `A modular, object-oriented combat framework featuring a custom server-authoritative hitbox system, client-predicted directional dodge rolls with vector projection, fluid animations, and a seamless camera management layer.
+
+    Click the arrow, on the right side, to view the full source code repository!`,
+    tags: ['Combat Systems', 'Luau Scripting', 'Object-Oriented (OOP)', 'Rojo', 'Wally'],
+    image: '/projects/advanced_combat_system.png', 
+    video: '/projects/videos/advanced_combat_system.mp4',
+    gallery: [], 
+    href: 'https://github.com/magssium/advanced_combat_system', 
+    year: 'Late 2025',
+  },
+
+  {
     title: 'Advanced Directional Movement',
     description: 'A custom shift-lock controller and 4-way evasive roll engine featuring vector projection alignment, dynamic camera tweens, and Rojo source control integration.',
     tags: ['Luau', 'Vector Math', 'Rojo', 'Gameplay Scripting'],
-    image: '/projects/project-1.png', 
+    image: '/projects/advanced_directional_movement.png', 
     video: '/projects/videos/advanced_directional_movement.mp4',
     gallery: [], 
     href: '#', 
@@ -49,27 +62,31 @@ export const projects: Project[] = [
     title: 'RemoteSpy Detection',
     description: 'A runtime memory obfuscation and client-to-server argument validation layer designed to detect unauthorized environment hooks, intercept malicious remote sniffing, and flag automated script execution.',
     tags: ['Cybersecurity', 'Luau Scripting', 'Metatable Manipulation', 'Memory Protection'],
-    image: '/projects/project-2.png',
+    image: '/projects/remotespy_detection.png',
     video: '/projects/videos/remotespy_detection.mp4',
     gallery: [],
     href: '#',
-    year: '2024',
+    year: 'Mid 2024',
   },
   {
     title: 'Noclip Anticheat',
-    description: 'A fast, modular server-side anti-cheat built to stop noclip, wall-phasing, and speed exploits on Roblox operating on a strict zero-trust validation model.',
+    description: `A fast, modular server-side anti-cheat built to stop noclip, wall-phasing, exploits on Roblox operating on a strict zero-trust validation model.
+    
+    Click the arrow, on the right side, to view the full source code repository!`,
     tags: ['Anti-Exploit', 'Luau Scripting', 'Server Authority', 'Rojo'],
-    image: '/projects/project-3.png',
+    image: '/projects/noclip_showcase.png',
     video: '/projects/videos/noclip_showcase.mp4', 
     gallery: [],
     href: 'https://github.com/magssium/anti_noclip',
-    year: '2024',
+    year: 'Early 2024',
   },
   {
     title: 'Anti-Teleport System',
-    description: 'A server-authoritative position validation system tracking delta movements, threshold limits, and workspace state synchronization to instantly flag and rollback character physics anomalies.',
+    description: `A server-authoritative position validation system tracking delta movements, threshold limits, and workspace state synchronization to instantly flag and rollback character physics anomalies.
+    
+    Click the arrow, on the right side, to view the full source code repository!`,
     tags: ['Anti-Exploit', 'Luau Scripting', 'Server Authority', 'Network Optimization'],
-    image: '/projects/project-4.png',
+    image: '/projects/teleport_showcase.png',
     video: '/projects/videos/teleport_showcase.mp4',
     gallery: [],
     href: 'https://github.com/magssium/anti_tp',
