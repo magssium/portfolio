@@ -40,7 +40,7 @@ const imgBase = '/projects'
 // Videos: Git LFS files must come from GitHub's media CDN (Pages can't serve them).
 // Format: https://media.githubusercontent.com/media/<user>/<repo>/<branch>/<path in repo>
 const videoBase = 'https://media.githubusercontent.com/media/magssium/portfolio/main/public/projects/videos'
-const cdnBase = 'https://githubusercontent.com';
+const cdnBase = 'https://media.githubusercontent.com/media/magssium/portfolio/main/public/projects'
 
 
 export const projects: Project[] = [
