@@ -34,9 +34,12 @@ export const profile = {
   email: 'cornelious.dev@proton.me',
 }
 
-// Git LFS media CDN base URL (GitHub Pages can't serve LFS files directly).
-// Format: https://media.githubusercontent.com/media/<user>/<repo>/<branch>
-const cdnBase = 'https://media.githubusercontent.com/media/magssium/portfolio/main'
+// Screenshots: normal relative paths served from the public/ folder.
+const imgBase = '/projects'
+
+// Videos: Git LFS files must come from GitHub's media CDN (Pages can't serve them).
+// Format: https://media.githubusercontent.com/media/<user>/<repo>/<branch>/<path in repo>
+const videoBase = 'https://media.githubusercontent.com/media/magssium/portfolio/main/public/projects/videos'
 
 export const projects: Project[] = [
   {
@@ -45,8 +48,8 @@ export const projects: Project[] = [
 
     Click the arrow, on the right side, to view the full source code repository!`,
     tags: ['Combat Systems', 'Luau Scripting', 'Object-Oriented (OOP)', 'Rojo', 'Wally'],
-    image: `${cdnBase}/projects/advanced_combat_system.png`,
-    video: `${cdnBase}/projects/videos/advanced_combat_system.mp4`,
+    image: `${imgBase}/advanced_combat_system.png`,
+    video: `${videoBase}/advanced_combat_system.mp4`,
     gallery: [],
     href: 'https://github.com/magssium/advanced_combat_system',
     year: 'Late 2025',
@@ -55,8 +58,8 @@ export const projects: Project[] = [
     title: 'Advanced Directional Movement',
     description: 'A custom shift-lock controller and 4-way evasive roll engine featuring vector projection alignment, dynamic camera tweens, and Rojo source control integration.',
     tags: ['Luau', 'Vector Math', 'Rojo', 'Gameplay Scripting'],
-    image: `${cdnBase}/projects/advanced_directional_movement.png`,
-    video: `${cdnBase}/projects/videos/advanced_directional_movement.mp4`,
+    image: `${imgBase}/advanced_directional_movement.png`,
+    video: `${videoBase}/advanced_directional_movement.mp4`,
     gallery: [],
     href: '#',
     year: 'Early 2025',
@@ -65,8 +68,8 @@ export const projects: Project[] = [
     title: 'RemoteSpy Detection',
     description: 'A runtime memory obfuscation and client-to-server argument validation layer designed to detect unauthorized environment hooks, intercept malicious remote sniffing, and flag automated script execution.',
     tags: ['Cybersecurity', 'Luau Scripting', 'Metatable Manipulation', 'Memory Protection'],
-    image: `${cdnBase}/projects/remotespy_detection.png`,
-    video: `${cdnBase}/projects/videos/remotespy_detection.mp4`,
+    image: `${imgBase}/remotespy_detection.png`,
+    video: `${videoBase}/remotespy_detection.mp4`,
     gallery: [],
     href: '#',
     year: 'Mid 2024',
@@ -77,8 +80,8 @@ export const projects: Project[] = [
 
     Click the arrow, on the right side, to view the full source code repository!`,
     tags: ['Anti-Exploit', 'Luau Scripting', 'Server Authority', 'Rojo'],
-    image: `${cdnBase}/projects/noclip_showcase.png`,
-    video: `${cdnBase}/projects/videos/noclip_showcase.mp4`,
+    image: `${imgBase}/noclip_showcase.png`,
+    video: `${videoBase}/noclip_showcase.mp4`,
     gallery: [],
     href: 'https://github.com/magssium/anti_noclip',
     year: 'Early 2024',
@@ -89,8 +92,8 @@ export const projects: Project[] = [
 
     Click the arrow, on the right side, to view the full source code repository!`,
     tags: ['Anti-Exploit', 'Luau Scripting', 'Server Authority', 'Network Optimization'],
-    image: `${cdnBase}/projects/teleport_showcase.png`,
-    video: `${cdnBase}/projects/videos/teleport_showcase.mp4`,
+    image: `${imgBase}/teleport_showcase.png`,
+    video: `${videoBase}/teleport_showcase.mp4`,
     gallery: [],
     href: 'https://github.com/magssium/anti_tp',
     year: '2022',
