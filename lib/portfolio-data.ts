@@ -34,6 +34,9 @@ export const profile = {
   email: 'cornelious.dev@proton.me',
 }
 
+// Fixed GitHub Media CDN Base URL for Git LFS bypass
+const cdnBase = 'https://githubusercontent.com';
+
 export const projects: Project[] = [
   {
     title: 'Advanced Combat System',
@@ -41,19 +44,18 @@ export const projects: Project[] = [
 
     Click the arrow, on the right side, to view the full source code repository!`,
     tags: ['Combat Systems', 'Luau Scripting', 'Object-Oriented (OOP)', 'Rojo', 'Wally'],
-    image: '/public/projects/advanced_combat_system.png', 
-    video: '/public/projects/videos/advanced_combat_system.mp4',
+    image: `${cdnBase}/projects/advanced_combat_system.png`, 
+    video: `${cdnBase}/projects/videos/advanced_combat_system.mp4`,
     gallery: [], 
     href: 'https://github.com/magssium/advanced_combat_system', 
     year: 'Late 2025',
   },
-
   {
     title: 'Advanced Directional Movement',
     description: 'A custom shift-lock controller and 4-way evasive roll engine featuring vector projection alignment, dynamic camera tweens, and Rojo source control integration.',
     tags: ['Luau', 'Vector Math', 'Rojo', 'Gameplay Scripting'],
-    image: '/projects/advanced_directional_movement.png', 
-    video: '/projects/videos/advanced_directional_movement.mp4',
+    image: `${cdnBase}/projects/advanced_directional_movement.png`, 
+    video: `${cdnBase}/projects/videos/advanced_directional_movement.mp4`,
     gallery: [], 
     href: '#', 
     year: 'Early 2025',
@@ -62,8 +64,8 @@ export const projects: Project[] = [
     title: 'RemoteSpy Detection',
     description: 'A runtime memory obfuscation and client-to-server argument validation layer designed to detect unauthorized environment hooks, intercept malicious remote sniffing, and flag automated script execution.',
     tags: ['Cybersecurity', 'Luau Scripting', 'Metatable Manipulation', 'Memory Protection'],
-    image: '/projects/remotespy_detection.png',
-    video: '/projects/videos/remotespy_detection.mp4',
+    image: `${cdnBase}/projects/remotespy_detection.png`,
+    video: `${cdnBase}/projects/videos/remotespy_detection.mp4`,
     gallery: [],
     href: '#',
     year: 'Mid 2024',
@@ -74,8 +76,8 @@ export const projects: Project[] = [
     
     Click the arrow, on the right side, to view the full source code repository!`,
     tags: ['Anti-Exploit', 'Luau Scripting', 'Server Authority', 'Rojo'],
-    image: '/projects/noclip_showcase.png',
-    video: '/projects/videos/noclip_showcase.mp4', 
+    image: `${cdnBase}/projects/noclip_showcase.png`,
+    video: `${cdnBase}/projects/videos/noclip_showcase.mp4`, 
     gallery: [],
     href: 'https://github.com/magssium/anti_noclip',
     year: 'Early 2024',
@@ -86,8 +88,8 @@ export const projects: Project[] = [
     
     Click the arrow, on the right side, to view the full source code repository!`,
     tags: ['Anti-Exploit', 'Luau Scripting', 'Server Authority', 'Network Optimization'],
-    image: '/projects/teleport_showcase.png',
-    video: '/projects/videos/teleport_showcase.mp4',
+    image: `${cdnBase}/projects/teleport_showcase.png`,
+    video: `${cdnBase}/projects/videos/teleport_showcase.mp4`,
     gallery: [],
     href: 'https://github.com/magssium/anti_tp',
     year: '2022',
@@ -113,7 +115,6 @@ export const experience: Experience[] = [
     period: '2021 — 2024',
     summary: 'Designed and programmed custom user interfaces and script hubs using Luau.',
   }
-
 ]
 
 export const socials: SocialLink[] = [
