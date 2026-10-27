@@ -34,8 +34,9 @@ export const profile = {
   email: 'cornelious.dev@proton.me',
 }
 
-// Fixed GitHub Media CDN Base URL for Git LFS bypass
-const cdnBase = 'https://githubusercontent.com';
+// Git LFS media CDN base URL (GitHub Pages can't serve LFS files directly).
+// Format: https://media.githubusercontent.com/media/<user>/<repo>/<branch>
+const cdnBase = 'https://media.githubusercontent.com/media/magssium/portfolio/main'
 
 export const projects: Project[] = [
   {
@@ -44,20 +45,20 @@ export const projects: Project[] = [
 
     Click the arrow, on the right side, to view the full source code repository!`,
     tags: ['Combat Systems', 'Luau Scripting', 'Object-Oriented (OOP)', 'Rojo', 'Wally'],
-    image: `${cdnBase}/projects/advanced_combat_system.png`, 
+    image: `${cdnBase}/projects/advanced_combat_system.png`,
     video: `${cdnBase}/projects/videos/advanced_combat_system.mp4`,
-    gallery: [], 
-    href: 'https://github.com/magssium/advanced_combat_system', 
+    gallery: [],
+    href: 'https://github.com/magssium/advanced_combat_system',
     year: 'Late 2025',
   },
   {
     title: 'Advanced Directional Movement',
     description: 'A custom shift-lock controller and 4-way evasive roll engine featuring vector projection alignment, dynamic camera tweens, and Rojo source control integration.',
     tags: ['Luau', 'Vector Math', 'Rojo', 'Gameplay Scripting'],
-    image: `${cdnBase}/projects/advanced_directional_movement.png`, 
+    image: `${cdnBase}/projects/advanced_directional_movement.png`,
     video: `${cdnBase}/projects/videos/advanced_directional_movement.mp4`,
-    gallery: [], 
-    href: '#', 
+    gallery: [],
+    href: '#',
     year: 'Early 2025',
   },
   {
@@ -73,11 +74,11 @@ export const projects: Project[] = [
   {
     title: 'Noclip Anticheat',
     description: `A fast, modular server-side anti-cheat built to stop noclip, wall-phasing, exploits on Roblox operating on a strict zero-trust validation model.
-    
+
     Click the arrow, on the right side, to view the full source code repository!`,
     tags: ['Anti-Exploit', 'Luau Scripting', 'Server Authority', 'Rojo'],
     image: `${cdnBase}/projects/noclip_showcase.png`,
-    video: `${cdnBase}/projects/videos/noclip_showcase.mp4`, 
+    video: `${cdnBase}/projects/videos/noclip_showcase.mp4`,
     gallery: [],
     href: 'https://github.com/magssium/anti_noclip',
     year: 'Early 2024',
@@ -85,7 +86,7 @@ export const projects: Project[] = [
   {
     title: 'Anti-Teleport System',
     description: `A server-authoritative position validation system tracking delta movements, threshold limits, and workspace state synchronization to instantly flag and rollback character physics anomalies.
-    
+
     Click the arrow, on the right side, to view the full source code repository!`,
     tags: ['Anti-Exploit', 'Luau Scripting', 'Server Authority', 'Network Optimization'],
     image: `${cdnBase}/projects/teleport_showcase.png`,
@@ -114,11 +115,11 @@ export const experience: Experience[] = [
     company: 'Freelance',
     period: '2021 — 2024',
     summary: 'Designed and programmed custom user interfaces and script hubs using Luau.',
-  }
+  },
 ]
 
 export const socials: SocialLink[] = [
-  { label: 'Discord', href: 'https://discord.com', handle: 'tbe_octane' }, 
+  { label: 'Discord', href: 'https://discord.com', handle: 'tbe_octane' },
   { label: 'GitHub', href: 'https://github.com/magssium', handle: '@magssium' },
   { label: 'Email', href: `mailto:${profile.email}`, handle: profile.email },
 ]
