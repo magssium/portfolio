@@ -95,7 +95,7 @@ export const projects: Project[] = [
     video: `${videoBase}/teleport_showcase.mp4`,
     gallery: [],
     href: 'https://github.com/magssium/anti_tp',
-    year: '2022',
+    year: 'Late 2023',
   },
 ]
 
