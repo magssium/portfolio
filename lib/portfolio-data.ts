@@ -34,14 +34,11 @@ export const profile = {
   email: 'cornelious.dev@proton.me',
 }
 
-// Screenshots: normal relative paths served from the public/ folder.
-const imgBase = '/projects'
+// Screenshots: normal (non-LFS) files, served via the raw GitHub CDN.
+const cdnBase = 'https://raw.githubusercontent.com/magssium/portfolio/main/public/projects'
 
-// Videos: Git LFS files must come from GitHub's media CDN (Pages can't serve them).
-// Format: https://media.githubusercontent.com/media/<user>/<repo>/<branch>/<path in repo>
+// Videos: Git LFS files, served via GitHub's media CDN.
 const videoBase = 'https://media.githubusercontent.com/media/magssium/portfolio/main/public/projects/videos'
-const cdnBase = 'https://media.githubusercontent.com/media/magssium/portfolio/main/public/projects'
-
 
 export const projects: Project[] = [
   {
@@ -50,7 +47,7 @@ export const projects: Project[] = [
 
     Click the arrow, on the right side, to view the full source code repository!`,
     tags: ['Combat Systems', 'Luau Scripting', 'Object-Oriented (OOP)', 'Rojo', 'Wally'],
-    image: `${cdnBase}/project/advanced_combat_system.png`,
+    image: `${cdnBase}/advanced_combat_system.png`,
     video: `${videoBase}/advanced_combat_system.mp4`,
     gallery: [],
     href: 'https://github.com/magssium/advanced_combat_system',
@@ -60,7 +57,7 @@ export const projects: Project[] = [
     title: 'Advanced Directional Movement',
     description: 'A custom shift-lock controller and 4-way evasive roll engine featuring vector projection alignment, dynamic camera tweens, and Rojo source control integration.',
     tags: ['Luau', 'Vector Math', 'Rojo', 'Gameplay Scripting'],
-    image: `${cdnBase}/project/advanced_directional_movement.png`,
+    image: `${cdnBase}/advanced_directional_movement.png`,
     video: `${videoBase}/advanced_directional_movement.mp4`,
     gallery: [],
     href: '#',
@@ -70,7 +67,7 @@ export const projects: Project[] = [
     title: 'RemoteSpy Detection',
     description: 'A runtime memory obfuscation and client-to-server argument validation layer designed to detect unauthorized environment hooks, intercept malicious remote sniffing, and flag automated script execution.',
     tags: ['Cybersecurity', 'Luau Scripting', 'Metatable Manipulation', 'Memory Protection'],
-    image: `${cdnBase}/project/remotespy_detection.png`,
+    image: `${cdnBase}/remotespy_detection.png`,
     video: `${videoBase}/remotespy_detection.mp4`,
     gallery: [],
     href: '#',
@@ -82,7 +79,7 @@ export const projects: Project[] = [
 
     Click the arrow, on the right side, to view the full source code repository!`,
     tags: ['Anti-Exploit', 'Luau Scripting', 'Server Authority', 'Rojo'],
-    image: `${cdnBase}/project/noclip_showcase.png`,
+    image: `${cdnBase}/noclip_showcase.png`,
     video: `${videoBase}/noclip_showcase.mp4`,
     gallery: [],
     href: 'https://github.com/magssium/anti_noclip',
@@ -94,7 +91,7 @@ export const projects: Project[] = [
 
     Click the arrow, on the right side, to view the full source code repository!`,
     tags: ['Anti-Exploit', 'Luau Scripting', 'Server Authority', 'Network Optimization'],
-    image: `${cdnBase}/project/teleport_showcase.png`,
+    image: `${cdnBase}/teleport_showcase.png`,
     video: `${videoBase}/teleport_showcase.mp4`,
     gallery: [],
     href: 'https://github.com/magssium/anti_tp',
