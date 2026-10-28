@@ -64,6 +64,16 @@ export const projects: Project[] = [
     year: 'Early 2025',
   },
   {
+    title: 'Advanced Vehicular Suspension',
+    description: 'An advanced, production-ready physics framework combining a custom shift-lock controller with a 4-way evasive roll engine. Utilizes vector projection alignment for high-fidelity surface handling, dynamic camera tweens for responsive game feel, and a fully modular codebase engineered with Rojo source control.',
+    tags: ['Luau', 'Vector Math', 'Rojo', 'Gameplay Scripting', '3D Physics'],
+    image: `${cdnBase}/advanced_suspension.png`,
+    video: `${videoBase}/advanced_suspension.mp4`,
+    gallery: [],
+    href: '#',
+    year: 'Early 2025',
+  },
+  {
     title: 'RemoteSpy Detection',
     description: 'A runtime memory obfuscation and client-to-server argument validation layer designed to detect unauthorized environment hooks, intercept malicious remote sniffing, and flag automated script execution.',
     tags: ['Cybersecurity', 'Luau Scripting', 'Metatable Manipulation', 'Memory Protection'],
