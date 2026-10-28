@@ -65,13 +65,13 @@ export const projects: Project[] = [
   },
   {
     title: 'Advanced Vehicular Suspension',
-    description: 'An advanced, production-ready physics framework combining a custom shift-lock controller with a 4-way evasive roll engine. Utilizes vector projection alignment for high-fidelity surface handling, dynamic camera tweens for responsive game feel, and a fully modular codebase engineered with Rojo source control.',
-    tags: ['Luau', 'Vector Math', 'Rojo', 'Gameplay Scripting', '3D Physics'],
+    description: 'An advanced, physics framework combining a car with advanced suspension, to give it a more realistic look.',
+    tags: ['Luau', 'Vector Math', 'Rojo', 'Gameplay Scripting', 'Physics'],
     image: `${cdnBase}/advanced_suspension.png`,
     video: `${videoBase}/advanced_suspension.mp4`,
     gallery: [],
     href: '#',
-    year: 'Early 2025',
+    year: 'Late 2024',
   },
   {
     title: 'RemoteSpy Detection',
